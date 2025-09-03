@@ -68,7 +68,9 @@ public class Student {
     public int getId(){
         return id;
     }
-    public void chuanHoa(String name, String lop){
+    
+    public void chuanHoa(String name, String lop, String msv){
+        this.msv = msv.toUpperCase();
         this.lop = lop.toUpperCase();
         String[] tmp = name.trim().toLowerCase().split("\\s+");
         String newName = "";

@@ -6,6 +6,7 @@
 package AddStudentDatabase;
 
 import AddStudentDatabase.view.StudentList;
+import java.util.Locale;
 
 /**
  *
@@ -28,6 +29,7 @@ public class App {
 
         /* Mở form chính */
         java.awt.EventQueue.invokeLater(() -> {
+            Locale.setDefault(Locale.US);
             StudentList ptit = new StudentList();
             ptit.setVisible(true);
             ptit.setLocationRelativeTo(null);

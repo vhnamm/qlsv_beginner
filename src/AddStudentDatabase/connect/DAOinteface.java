@@ -14,5 +14,6 @@ import java.util.ArrayList;
 public interface DAOinteface<T> {
     public ArrayList<T> getAllData();
     public boolean addData(T t);
-    
+    public boolean deleteByID(int id);
+    public boolean updateData(T t);
 }
